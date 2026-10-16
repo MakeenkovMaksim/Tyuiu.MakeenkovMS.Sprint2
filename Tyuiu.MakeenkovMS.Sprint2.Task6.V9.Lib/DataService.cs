@@ -14,25 +14,11 @@ namespace Tyuiu.MakeenkovMS.Sprint2.Task6.V9.Lib
                 _ => 0
             };
 
-            if (n < daysInMonth)
-            {
-                n++;
-            }
-            else
-            {
-                n = 1;
-                if (m == 12)
-                {
-                    m = 1;
-                }
-                else
-                {
-                    m++;
-                }
-            }
+            int nextDay = (n < daysInMonth) ? (n + 1) : 1;
+            int nextMonth = (n < daysInMonth) ? m : (m == 12 ? 1 : m + 1);
 
-            string dayStr = n < 10 ? "0" + n : n.ToString();
-            string monthStr = m < 10 ? "0" + m : m.ToString();
+            string dayStr = nextDay < 10 ? "0" + nextDay : nextDay.ToString();
+            string monthStr = nextMonth < 10 ? "0" + nextMonth : nextMonth.ToString();
 
             return dayStr + "." + monthStr;
         }
