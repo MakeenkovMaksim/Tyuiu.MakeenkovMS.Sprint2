@@ -10,8 +10,8 @@ namespace Tyuiu.MakeenkovMS.Sprint2.Task7.V8.Test
         public void ValidExpression()
         {
             DataService ds = new DataService();
-            double x = 1;
-            double y = 2;
+            double x = 3;
+            double y = 1;
             bool wait = true;
 
             bool res = ds.CheckDotInShadedArea(x, y);
