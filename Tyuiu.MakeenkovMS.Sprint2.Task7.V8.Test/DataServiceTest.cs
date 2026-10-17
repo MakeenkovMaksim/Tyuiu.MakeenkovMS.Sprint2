@@ -1,4 +1,4 @@
-﻿using using Microsoft.VisualStudio.TestTools.UnitTesting;
+﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Tyuiu.MakeenkovMS.Sprint2.Task7.V8.Lib;
 
 namespace Tyuiu.MakeenkovMS.Sprint2.Task7.V8.Test
